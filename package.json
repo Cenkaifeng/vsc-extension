@@ -6,19 +6,34 @@
 	"engines": {
 		"vscode": "^1.36.0"
 	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
-		}]
-	},
+    "publisher": "shalldie",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Cenkaifeng/vsc-extension.git"
+    },
+    "icon": "/static/Home2.png",
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.helloWorld"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+				"command": "extension.helloWorld",
+				"title": "Hello World"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Plugin  插件配置 TODO:",
+            "properties": {
+
+            }
+        }
+    },
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
