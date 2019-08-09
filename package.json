@@ -3,6 +3,7 @@
 	"displayName": "ex-test",
 	"description": "a extension demo",
 	"version": "0.0.1",
+	"author": "Jervis",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
